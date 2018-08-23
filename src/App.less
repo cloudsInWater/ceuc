@@ -1,0 +1,1831 @@
+@screen: 1280px;
+.app {
+  position: relative;
+}
+html,body{
+  background: #fff;
+}
+.u-side {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: #fafafa;
+  min-width: @screen;
+  width: 100%;
+  height: 100px;
+  border-right: #eeeeee 1px solid;
+  justify-content: center;
+  .top {
+    max-width: @screen;
+    width: 100%;
+    display: flex;
+    background: #fff;
+    height:100%;
+    .ico {
+      width: 160px;
+      line-height: 100px;
+      margin-left: 50px;
+      color: #333333;
+      background: url("./img/logo.png") center left no-repeat;
+      background-size: 74px 73px;
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      li{
+        display: inline-block;
+        height:100%;
+      }
+      .type-list {
+        width: 150px;
+        line-height: 100px;
+        display: inline-block;
+        padding-left:17px;
+        color: #999999;
+        text-align: center;
+      }
+      .menu-type {
+        width: 160px;
+        height:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333333;
+        cursor: pointer;
+        font-size: 24px;
+        border-left: 5px solid transparent;
+        &.active {
+          border-left-color: #00C6AE;
+          background: rgba(149, 228, 218, 0.29);
+        }
+        a {
+          display: block;
+          text-align: center;
+          font-size: 24px;
+          color: #333333;
+          width:100%;
+          height:100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img{
+            width:40px;
+            height:40px;
+            margin-right:10px;  
+          }
+        }
+        &:hover {
+          background: rgba(149, 228, 218, 0.29);
+        }
+      }
+    
+      .have-width-more{
+        width:200px ;
+      }
+    }
+  }
+}
+
+.u-main {
+  display: flex;
+  justify-content: center;
+  background: #fafafa;
+  min-width: @screen;
+  .container {
+    width: @screen;
+    background: #fff;
+  }
+}
+
+//底栏
+.consult {
+  padding: 43px 40px 30px 81px;
+  background: #1D4CB6;
+  width: @screen;
+  display: flex;
+  .qr {
+    padding-left: 18px;
+  }
+  .text {
+    color: #FFF;
+    text-align: left;
+    padding-top: 20px;
+    padding-right: 41px;
+    .title {
+      font-size: 20px;
+      line-height: 22px;
+      padding-bottom: 22px;
+      border-bottom: 4px solid #F8E71C;
+      display: inline-block;
+    }
+    .context {
+      padding-top: 22px;
+      font-size: 12px;
+      letter-spacing: 0.81px;
+      line-height: 28px;
+    }
+  }
+}
+
+//主页样式
+.home {
+  .top {
+    width: @screen;
+    height: 817.7px;
+    background: url("./img/ceuc-01.png") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    .left {
+      position: relative;
+      width: 33.4%;
+      height: 886px;
+      background: #4279F4;
+      z-index: 10;
+      .ico {
+        position: absolute;
+        top: 40px;
+        left: 123px;
+        width: 141px;
+        height: 52px;
+        background: url("./img/ceuc-09.png") center left no-repeat;
+        background-size: 141px 52px;
+      }
+      .line {
+        position: absolute;
+        top: 0;
+        left: 51px;
+        width: 2px;
+        height: 1146px;
+        background: #fff;
+      }
+      .dayAndSite {
+        position: absolute;
+        width: 720px;
+        left: 132px;
+        top: 550px;
+        display: flex;
+        .day {
+          font-size: 36px;
+          color: #FFFFFF;
+          letter-spacing: 1.01px;
+          background: #F56923;
+          line-height: 80px;
+          padding-left: 24px;
+          padding-right: 20px;
+        }
+        .site {
+          border: 5px solid #F56923;
+          padding-top: 12px;
+          padding-left: 28px;
+          padding-right: 20px;
+          background: rgba(255,255,255,0.20);
+          display: flex;
+          .city {
+            font-size: 36px;
+            color: #F56923;
+            letter-spacing: 1.01px;
+            line-height: 50px;
+          }
+          .hotel {
+            font-size: 30px;
+            color: #F4F4F4;
+            letter-spacing: 0.84px;
+            line-height: 50px;
+          }
+        }
+      }
+      .square {
+        position: absolute;
+        left: 123px;
+        bottom: -73px;
+        width: 42.3%;
+        height: 18.4%;
+        -webkit-background-size: 42.3% 18.4%;
+        background-size: 42.3% 18.4%;
+        &.s0 {
+          background: url("./img/ceuc-04.png") no-repeat;
+        }
+        &.s1 {
+          background: url("./img/ceuc-05.png") no-repeat;
+        }
+        &.s2 {
+          background: url("./img/ceuc-06.png") no-repeat;
+        }
+        &.s3 {
+          background: url("./img/ceuc-07.png") no-repeat;
+        }
+      }
+    }
+    .triangle {
+      width: 0;
+      height: 0;
+      position: absolute;
+      right: 16.4%;
+      top: 270px;
+      border-top: 27px solid transparent;
+      border-left: 46px solid #F5A623;
+      border-bottom: 27px solid transparent;
+    }
+    .text {
+      position: absolute;
+      top:189px;
+      left:130px;
+      z-index: 15;
+      .china2 {
+        padding-top: 36px;
+        width:700px;
+      }
+    }
+  }
+  .image-text {
+    position: relative;
+    height: 1151px;
+    width: 100%;
+    .text1 {
+      position: absolute;
+      top: 268px;
+      left: 20%;
+      width: 272px;
+      height: 273px;
+      font-size: 14px;
+      color: #4A4A4A;
+      letter-spacing: 0.7px;
+      line-height: 28px;
+      text-align: justify;
+    }
+    .image1 {
+      position: absolute;
+      top: -53px;
+      left: 52.7%;
+      width: 34.7%;
+      height: 580px;
+      background: url("./img/ceuc-21.png") no-repeat;
+      z-index: 15;
+      .blue {
+        width: 20px;
+        height: 80px;
+        bottom: 0;
+        left: -49px;
+        position: absolute;
+        background: #4279F4;
+      }
+    }
+    .text2 {
+      position: absolute;
+      top: 564.3px;
+      left: 52.7%;
+      width: 360px;
+      height: 359px;
+      font-size: 14px;
+      color: #4A4A4A;
+      letter-spacing: 0.44px;
+      line-height: 28px;
+      text-align: justify;
+      .red {
+        width: 20px;
+        height: 80px;
+        position: absolute;
+        right: -84px;
+        bottom: -30px;
+        background: #FB0868;
+      }
+    }
+    .image2 {
+      position: absolute;
+      top: 564.3px;
+      width: 30.4%;
+      left: 20%;
+      height: 389px;
+      background: url("./img/ceuc-22.png") no-repeat;
+      .green {
+        width: 80px;
+        height: 20px;
+        position: absolute;
+        bottom: 0;
+        left: -100px;
+        background: #50E3C2;
+      }
+    }
+    .bg1 {
+      position: absolute;
+      background: url("./img/ceuc-03.png") no-repeat;
+      -webkit-background-size: 150px 300px;
+      background-size: 150px 300px;
+      width: 150px;
+      height: 300px;
+      top: 955px;
+      right: 75px;
+      z-index: 5;
+    }
+    .bg2 {
+      position: absolute;
+      background: url("./img/ceuc-18.png") no-repeat;
+      background-size: 150px 289px;
+      width: 150px;
+      height: 289px;
+      bottom: 5px;
+      right: 0;
+      z-index: 10;
+    }
+  }
+  .four-lady {
+    height: 1148px;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    .yellow {
+      position: absolute;
+      width: 25%;
+      height: 515px;
+      left: 20.8%;
+      top: 0;
+      background: #F8E71C;
+      display: flex;
+      justify-content: center;
+      .title {
+        height: 82px;
+        line-height: 67px;
+        margin-top: 32px;
+        margin-left: 56px;
+        margin-right: 64px;
+        font-size: 48px;
+        color: #4A4A4A;
+        letter-spacing: 1.5px;
+        border-bottom: 13px solid #FFFFFF;
+      }
+    }
+    .lady {
+      position: absolute;
+      width: 19.5%;
+      height: 355px;
+      z-index: 15;
+      &.con1 {
+        top: 216px;
+        left: 10.9%;
+      }
+      &.con2 {
+        top: 216px;
+        left: 50%;
+      }
+      &.con3 {
+        top: 571px;
+        left: 30.4%;
+      }
+      &.con4 {
+        top: 571px;
+        left: 69.5%;
+      }
+    }
+    .bg1 {
+      position: absolute;
+      width: 194px;
+      height: 194px;
+      top: 209px;
+      left: 1007px;
+      background: url("./img/Group 2 Copy 2.png") no-repeat;
+      z-index: 10;
+    }
+    .bg2 {
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      top: 216px;
+      left: 1061px;
+      background: url("./img/Rectangle 13 Copy.png") no-repeat;
+      z-index: 5;
+    }
+    .bg3 {
+      position: absolute;
+      width: 245px;
+      height: 231px;
+      top: 754px;
+      left: 50%;
+      background: url("./img/ceuc-10.png") no-repeat;
+      background-size: 245px 231px;
+    }
+    .bg4 {
+      position: absolute;
+      width: 127px;
+      height: 401px;
+      bottom: -30px;
+      left: 0;
+      background: url("./img/ceuc-23.png") no-repeat;
+      -webkit-background-size: 127px 401px;
+      background-size: 127px 401px;
+    }
+  }
+  .sponsor {
+    margin-left: 22.3%;
+    height: 614px;
+    background: #F0F0F0;
+    margin-bottom: 337.8px;
+    position: relative;
+    .cir {
+      width: 15px;
+      height: 15px;
+      border-radius: 7.5px;
+      display: inline-block;
+      &.pink {
+        background: #FCA6C8;
+        margin-right: 13px;
+      }
+      &.yellow {
+        background: #F8E71C;
+        margin-right: 8px;
+      }
+      &.blue {
+        background: #00B1FF;
+        margin-right: 8px;
+      }
+    }
+    .title {
+      position: relative;
+      height: 198px;
+      padding-left: 42px;
+      margin-top: 0;
+      padding-top: 57px;
+      line-height: 67px;
+      font-size: 48px;
+      color: #4A4A4A;
+      letter-spacing: 1.5px;
+      .line {
+        position: absolute;
+        width: 650px;
+        height: 45px;
+        top: 90px;
+        left: 272px;
+        font-size: 24px;
+        color: #4A4A4A;
+        letter-spacing: 8px;
+        color: #4A4A4A;
+        line-height: 33px;
+      }
+    }
+    .main {
+      position: absolute;
+      width: 47.8%;
+      height: 772.8px;
+      top: 178px;
+      left: -142px;
+      background: #4279F4;
+      .yellow-box {
+        position: absolute;
+        width: 540px;
+        right: 31.5px;
+        top: 34px;
+        .box-line {
+          display: flex;
+          justify-content: flex-end;
+          .box {
+            width: 15.6px;
+            height: 19.2px;
+            margin-left: 9.1px;
+            margin-bottom: 7px;
+            background: #F8E71C;
+          }
+        }
+      }
+      .text {
+        padding-top: 141px;
+        padding-left: 66px;
+        text-align: left;
+        .title {
+          height: 90px;
+          color: #FFFFFF;
+          font-size: 48px;
+          letter-spacing: 1.5px;
+          padding: 0;
+        }
+        .line {
+          font-size: 36px;
+          color: #99D1FF;
+          padding-top: 20px;
+          line-height: 50px;
+          letter-spacing: 2.56px;
+        }
+        .content {
+          padding-top: 56px;
+          font-size: 20px;
+          color: #FFFFFF;
+          letter-spacing: 0.62px;
+          line-height: 36px;
+        }
+      }
+      .button {
+        height: 82px;
+        width: 77.7%;
+        padding: 17px 30px 17px 43px;
+        line-height: 50px;
+        font-size: 24px;
+        text-align: center;
+        opacity: 0.75;
+        color: #99D1FF;
+        letter-spacing: 1.12px;
+        background: #171A78;
+        border-radius: 8px;
+        margin-left: 34px;
+        margin-top: 126px;
+      }
+    }
+    .profession {
+      position: absolute;
+      left: 41.9%;
+      top: 178px;
+      width: 44.2%;
+      height: 325px;
+      background: #50E3C2;
+      .text {
+        padding-top: 41px;
+        padding-left: 38px;
+        text-align: left;
+        .title {
+          color: #4A4A4A;
+          font-size: 28px;
+          letter-spacing: 0.88px;
+          line-height: 40px;
+          height: 40px;
+          padding: 0;
+        }
+        .line {
+          padding-top: 10px;
+          font-size: 24px;
+          color: #FFFFFF;
+          letter-spacing: 1.71px;
+        }
+        .content {
+          padding-top: 33px;
+          font-size: 16px;
+          color: #4A4A4A;
+          letter-spacing: 0.5px;
+          line-height: 32px;
+        }
+      }
+    }
+    .technology {
+      position: absolute;
+      left: 41.9%;
+      top: 566px;
+      width: 44.2%;
+      height: 325px;
+      background: #F0F5FF;
+      .text {
+        padding-top: 41px;
+        padding-left: 38px;
+        text-align: left;
+        .title {
+          color: #4A4A4A;
+          font-size: 28px;
+          letter-spacing: 0.88px;
+          line-height: 40px;
+          height: 40px;
+          padding: 0;
+        }
+        .line {
+          padding-top: 10px;
+          font-size: 24px;
+          color: #4279F4;
+          letter-spacing: 1.71px;
+        }
+        .content {
+          padding-top: 33px;
+          font-size: 16px;
+          color: #4A4A4A;
+          letter-spacing: 0.5px;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+  .partner {
+    position: relative;
+    padding-top: 183px;
+    padding-bottom:  50px;
+    .text {
+      color: #4A4A4A;
+      text-align: center;
+      .title {
+        font-size: 36px;
+        color: #4A4A4A;
+        letter-spacing: 1.12px;
+        line-height: 50px;
+      }
+      .line1 {
+        // height: 358px;
+        padding-top: 54px;
+        padding-bottom: 70px;
+        display: flex;
+        padding-left: 156px;
+        flex-direction: column;
+        h2{
+          font-size: 22px;
+          color: #4A4A4A;
+          letter-spacing: 1.12px;
+          line-height: 30px;
+          text-align: left;
+          font-weight: normal;
+        }
+        &>div{
+          // height:150px;
+          display: flex;
+          align-items: center;
+        }
+        .cn,.cai,.k8s,.qiniu {
+          width: 250px;
+          height: 150.5px;
+          margin-right: 56px;
+          background: url("./img/cn.png") center center no-repeat;
+          background-size: 250px 39.5px;
+        }
+        .cai {
+          background: url("./img/VMware.png") center center no-repeat;
+        
+        }
+        .k8s {
+          background: url("./img/wy.png") center center no-repeat;
+        }
+        .qiniu {
+          background: url("./img/qiniu.png") center center no-repeat;
+        }
+      }
+      .line2 {
+        // height: 356px;
+        padding-top: 64px;
+        display: flex;
+        padding-left: 40px;
+        padding-bottom: 50px;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding-left: 100px;
+        div{
+          margin-bottom: 50px;
+          margin-right: 63px;
+          width:200px;
+          height:50px;
+        }
+        .huo{
+          background: url("./img/huo.png") left center no-repeat;
+        }
+        .jj {
+          background: url("./img/jj.png") left center no-repeat;
+        }
+        .sf {
+          background: url("./img/sf.png") left center no-repeat;
+        }
+        .DBA {
+          background: url("./img/DBAplus.png") left center no-repeat;
+        }
+        .osc {
+          background: url("./img/osc.png") left center no-repeat;
+        }
+        .info {
+          background: url("./img/infoQ.png") left center no-repeat;
+        }
+        .deg{
+          background: url("./img/deg.png") left center no-repeat;
+
+        }
+        .shuo{
+          background: url("./img/shuo.png") left center no-repeat;
+        }
+      }
+      .line3 {
+        // height: 438px;
+        padding-top: 71px;
+        display: flex;
+        padding-left: 100px;
+        .tmt {
+          width: 180px;
+          height: 50px;
+          margin-right: 75px;
+          background: url("./img/tmt.png") center right no-repeat;
+        }
+        .pr {
+          width: 180px;
+          height: 50px;
+          background: url("./img/pr.png") center center no-repeat;
+        }
+      }
+    }
+    .bg1 {
+      position: absolute;
+      left: 17.7%;
+      top: 172.2px;
+      width: 50px;
+      height: 50px;
+      background: url("./img/ceuc-19.png") no-repeat;
+      -webkit-background-size: 50px 50px;
+      background-size: 50px 50px;
+    }
+    .bg2 {
+      position: absolute;
+      left: 12.8%;
+      top: 102px;
+      width: 70px;
+      height: 70px;
+      background: url("./img/ceuc-11.png") no-repeat;
+      -webkit-background-size: 70px 70px;
+      background-size: 70px 70px;
+    }
+    .bg3 {
+      position: absolute;
+      right: 100px;
+      top: 430px;
+      width: 406px;
+      height: 405px;
+      background: url("./img/Group 2 Copy 3.png") no-repeat;
+    }
+    .button {
+      // position: absolute;
+      padding: 19px 30px 23px 30px;
+      // left: 525px;
+      // top: 1241px;
+      width: 209px;
+      height: 69px;
+      background: #F56923;
+      border-radius: 8px;
+      font-size: 24px;
+      color: #FFFFFF;
+      letter-spacing: 0.75px;
+      line-height: 33px;
+      margin:160px auto 80px 520px;
+      cursor: pointer;
+    }
+    .bottom {
+      position: relative;
+      .bg {
+        width: @screen;
+      }
+      .site {
+        position: absolute;
+        left: 58.9%;
+        top: 437px;
+        z-index: 10;
+      }
+      .welcome {
+        position: absolute;
+        width: 217px;
+        height: 33px;
+        top: 465px;
+        left: 62%;
+        background: #50E3C2;
+        border-radius: 4px;
+        padding: 3px 9px 3px 12px;
+        font-size: 20px;
+        color: #FFFFFF;
+        letter-spacing: 0.81px;
+        line-height: 27px;
+        .triangle {
+          width: 0;
+          height: 0;
+          position: absolute;
+          left: -6px;
+          top: 0;
+          border-top: 7px solid transparent;
+          border-right: 9px solid #50E3C2;
+          border-bottom: 7px solid transparent;
+        }
+      }
+      .three-text {
+        width: 37%;
+        height: 354px;
+        position: absolute;
+        padding-top: 51px;
+        padding-left: 25px;
+        left: 13%;
+        top: 93px;
+        background: rgba(255,255,255,0.90);
+        .pic-text {
+          display: flex;
+          margin-bottom: 29px;
+          .pic {
+            width: 0;
+            height: 0;
+            border-top: 14px solid transparent;
+            border-bottom: 14px solid transparent;
+            margin-right: 29px;
+            margin-top: 2px;
+            &.one {
+              border-left: 22px solid #00B1FF;
+            }
+            &.two {
+              border-left: 22px solid #FB0868;
+            }
+            &.three {
+              border-left: 22px solid #7ED321;
+            }
+          }
+          .text {
+            text-align: left;
+            .title {
+              font-size: 20px;
+              color: #4A4A4A;
+              line-height: 28px;
+              letter-spacing: 0.81px;
+            }
+            .context {
+              font-size: 14px;
+              color: #000000;
+              letter-spacing: 0.81px;
+              line-height: 22px;
+              font-weight: 300;
+            }
+          }
+
+        }
+      }
+      .two-pic {
+        position: absolute;
+        left: 50%;
+        top: 93px;
+        width: 37%;
+        height: 354px;
+        .hz {
+          width: 100%;
+          height: 354px;
+        }
+        .g4 {
+          position: absolute;
+          top: 0;
+          right: 24px;
+          width: 134px;
+          height: 151px;
+        }
+      }
+
+    }
+  }
+}
+
+//嘉宾页样式
+.join,.ticket {
+  .top {
+    width: @screen;
+    height: 820px;
+    background: #00C6AE;
+    position: relative;
+    display: flex;
+    background: url("./img/ceucTop-01.png") no-repeat;
+    background-size: 100% 100%;
+    .left {
+      position: relative;
+      width: 33.4%;
+      height: 886px;
+      background: #00B1FF;
+      z-index: 10;
+      .line {
+        position: absolute;
+        top: 0;
+        left: 51px;
+        width: 2px;
+        height: 1146px;
+        background: #fff;
+      }
+      .ico {
+        position: absolute;
+        top: 40px;
+        left: 123px;
+        width: 141px;
+        height: 52px;
+        background: url("./img/ceuc-09.png") center left no-repeat;
+        background-size: 141px 52px;
+      }
+    }
+    .qrAndtext {
+      position: absolute;
+      right: 55px;
+      bottom: 42px;
+      .qr {
+        width: 160px;
+        height: 160px;
+        background: url("./img/qr.png") no-repeat;
+        background-size: 100% 100%;
+      }
+      .scan {
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0.44px;
+        line-height: 20px;
+        text-align: center;
+        padding-top: 19px;
+      }
+    }
+    .text {
+      position: absolute;
+      top:189px;
+      left:130px;
+      z-index: 15;
+      .china2 {
+        padding-top: 36px;
+        width:700px;
+      }
+    }
+  }
+  .honor-guest {
+    width: 100%;
+    .first {
+      position: relative;
+      height: 525px;
+      .pic {
+        width: 365px;
+        height: 328px;
+        position: absolute;
+        top: -100px;
+        left: 10%;
+        background: #99D1FF;
+        color: #FFFFFF;
+        z-index: 10;
+        .title {
+          line-height: 67px;
+          font-size: 48px;
+          letter-spacing: 1.5px;
+          padding-top: 44px;
+          padding-left: 8.2%;
+          padding-bottom: 29px;
+        }
+        .things {
+          font-size: 20px;
+          color: #FFFFFF;
+          letter-spacing: 0.75px;
+          line-height: 36px;
+          padding-left: 32px;
+          padding-right: 32px;
+          font-weight: 300;
+        }
+      }
+      .image-text {
+        position: absolute;
+        display: flex;
+        top: 142px;
+        left: 40.3%;
+        width: 660px;
+        .image {
+          width: 280px;
+          height: 280px;
+          background: url("./img/Rectangle 13.png") no-repeat;
+          -webkit-background-size: 280px 280px;
+          background-size: 280px 280px;
+        }
+        .pic {
+          width: 280px;
+          height: 280px;
+          left: 13px;
+          top: 34px;
+          background: url("./img/Dan.png") no-repeat;
+          -webkit-background-size: 280px 280px;
+          background-size: 280px 280px;
+          z-index: 15;
+        }
+        .text {
+          position: absolute;
+          left: 47.7%;
+          top: 60px;
+          width: 345px;
+          color: #000000;
+          .name {
+            font-size: 36px;
+            letter-spacing: 1.12px;
+            line-height: 36px;
+            .job {
+              font-size: 24px;
+            }
+          }
+          .introduce {
+            padding-top: 28px;
+            font-size: 16px;
+            color: #000000;
+            letter-spacing: 1.12px;
+            text-align: justify;
+            line-height: 30px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+    .second {
+      position: relative;
+      height: 366px;
+      .text {
+        position: absolute;
+        left: 16.5%;
+        top: 31px;
+        width: 31.4%;
+        color: #000;
+      }
+      .name {
+        font-size: 36px;
+        letter-spacing: 1.12px;
+        line-height: 36px;
+        .job {
+          font-size: 24px;
+        }
+      }
+      .introduce {
+        padding-top: 28px;
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 1.12px;
+        text-align: justify;
+        line-height: 30px;
+        font-weight: 300;
+      }
+      .pic {
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        left: 51.3%;
+        top: 0;
+        background: url("./img/zx.png") no-repeat;
+        -webkit-background-size: 280px 280px;
+        background-size: 280px 280px;
+        z-index: 10;
+      }
+      .bg {
+        width: 258.8px;
+        height: 258.8px;
+        position: absolute;
+        left: 66.7%;
+        top: 21px;
+        background: url("./img/ceuc-24.png") no-repeat;
+        -webkit-background-size: 258.8px 258.8px;
+        background-size: 258.8px 258.8px;
+        z-index: 15;
+      }
+    }
+    .third {
+      height: 425px;
+      position: relative;
+      .image {
+        position: absolute;
+        left: 12.4%;
+        top: 0;
+        width: 280px;
+        height: 280px;
+        background: url("./img/rdy.png") no-repeat;
+        -webkit-background-size: 280px 280px;
+        background-size: 280px 280px;
+        z-index: 10;
+      }
+      .bg {
+        position: absolute;
+        left: 12.9%;
+        top: 56px;
+        width: 280px;
+        height: 280px;
+        background: url("./img/Rectangle 13 green.png") no-repeat;
+        -webkit-background-size: 280px 280px;
+        background-size: 280px 280px;
+      }
+      .text {
+        width: 43.3%;
+        position: absolute;
+        top: 39px;
+        left: 40.8%;
+        .name {
+          font-size: 36px;
+          letter-spacing: 1.12px;
+          line-height: 36px;
+          .job {
+            font-size: 24px;
+          }
+        }
+        .introduce {
+          padding-top: 28px;
+          font-size: 16px;
+          color: #000000;
+          letter-spacing: 1.12px;
+          text-align: justify;
+          line-height: 30px;
+          font-weight: 300;
+        }
+      }
+    }
+    .fourth {
+      height: 485px;
+      position: relative;
+      .text {
+        width: 30.4%;
+        position: absolute;
+        top: 24px;
+        left: 16.5%;
+        .name {
+          font-size: 36px;
+          letter-spacing: 1.12px;
+          line-height: 36px;
+          .job {
+            font-size: 24px;
+            margin-top:8px;
+          }
+        }
+        .introduce {
+          padding-top: 28px;
+          font-size: 16px;
+          color: #000000;
+          letter-spacing: 1.12px;
+          text-align: justify;
+          line-height: 30px;
+          font-weight: 300;
+        }
+      }
+      .image {
+        position: absolute;
+        left: 51.5%;
+        top: 0;
+        width: 280px;
+        height: 280px;
+        background: url("./img/hjy.png") no-repeat;
+        background-size: 280px 280px;
+        z-index: 10;
+      }
+      .bg {
+        position: absolute;
+        left: 54.5%;
+        top: -7px;
+        width: 280px;
+        height: 280px;
+        background: url("./img/Rectangle 13 pink.png") no-repeat;
+        background-size: 280px 280px;
+      }
+      .right {
+        position: absolute;
+        right: 0;
+        top: -157px;
+        width: 217px;
+        height: 416px;
+        background: url("./img/ceuc2-18.png") no-repeat;
+      }
+      .bottom {
+        position: absolute;
+        width: 80px;
+        height: 20px;
+        left: 10.6%;
+        bottom: 0;
+        background: #50E3C2;
+      }
+    }
+  }
+  .forum {
+    height: 744px;
+    margin: 87px 240px 269px 0px;
+    position: relative;
+    width: 62.5%;
+    background: url("./img/ceucTop-28.png") center left no-repeat;
+    background-size: 100% 100%;
+    .white {
+      position: absolute;
+      left: 134px;
+      top: -22px;
+      border-top: 90px solid transparent;
+      border-left: 149px solid #FFFFFF;
+      border-bottom: 90px solid transparent;
+      z-index: 10;
+    }
+    .pink {
+      position: absolute;
+      left: 185px;
+      top: 88px;
+      border-top: 48px solid transparent;
+      border-left: 81px solid #FB0868;
+      border-bottom: 48px solid transparent;
+      z-index: 15;
+    }
+    .forum-guest {
+      position: absolute;
+      left: 87.5%;
+      top: 476px;
+      width: 450px;
+      height: 416px;
+      background: #50E3C2;
+      z-index: 10;
+      color: #FFFFFF;
+      .title {
+        font-size: 48px;
+        line-height: 67px;
+        letter-spacing: 1.5px;
+        padding: 53px 55.1% 43px 11.8%;
+      }
+      .things {
+        font-size: 20px;
+        letter-spacing: 0.62px;
+        line-height: 36px;
+        padding: 0 11.8% 0 11.8%;
+        font-weight: 300;
+      }
+    }
+    .right {
+      position: absolute;
+      right: -61%;
+      top: 18px;
+      width: 208px;
+      height: 604px;
+      background: url("./img/Group 4 Copy.png") no-repeat;
+    }
+  }
+  .animate {
+    margin: 0 144px 100px 127px;
+    width: 1019px;
+    height: 550px;
+    border: 1px solid #979797;
+    display: flex;
+    .person {
+      display: flex;
+      overflow: hidden;
+      -webkit-transition: 1s width linear;
+      transition: 1s width linear;
+      justify-content: flex-start;
+      &.big {
+        width: 720px;
+      }
+      &.small {
+        width: 150px;
+      }
+      .image {
+        width: 320px;
+        height: 550px;
+      }
+      .text {
+        width: 400px;
+        padding: 44px 25px 59px 26px;
+        .name {
+          width: 349px;
+          font-size: 30px;
+          color: #000000;
+          letter-spacing: 1.12px;
+          line-height: 50px;
+        }
+        .job {
+          font-size: 20px;
+          line-height: 28px;
+        }
+        .introduce {
+          padding-top: 20px;
+          width: 349px;
+          font-size: 16px;
+          color: #000000;
+          letter-spacing: 1.12px;
+          line-height: 30px;
+          text-align: justify;
+          font-weight: 300;
+          &.padd{
+            padding-top:30px;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+}
+
+//议程页
+.agenda {
+  .top {
+    width: @screen;
+    height: 820px;
+    background: #00C6AE;
+    position: relative;
+    display: flex;
+    background: url("./img/ceuc-02.png") no-repeat;
+    background-size: 100% 100%;
+    .left {
+      position: relative;
+      width: 33.4%;
+      height: 886px;
+      background: #F5A623;
+      z-index: 10;
+      .line {
+        position: absolute;
+        top: 0;
+        left: 51px;
+        width: 2px;
+        height: 1146px;
+        background: #fff;
+      }
+      .ico {
+        position: absolute;
+        top: 40px;
+        left: 123px;
+        width: 141px;
+        height: 52px;
+        background: url("./img/ceuc-09.png") center left no-repeat;
+        background-size: 141px 52px;
+      }
+    }
+    .qrAndtext {
+      position: absolute;
+      right: 55px;
+      bottom: 42px;
+      .qr {
+        width: 160px;
+        height: 160px;
+        background: url("./img/qr.png") no-repeat;
+        background-size: 100% 100%;
+      }
+      .scan {
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0.44px;
+        line-height: 20px;
+        text-align: center;
+        padding-top: 19px;
+      }
+    }
+    .text {
+      position: absolute;
+      top:189px;
+      left:130px;
+      z-index: 15;
+      .china2 {
+        padding-top: 36px;
+        width:700px;
+      }
+    }
+  }
+  .agenda-page {
+    height: 350px;
+    position: relative;
+    z-index: 10;
+    .intro {
+      position: absolute;
+      top: -104px;
+      left: 136px;
+      width: 30.4%;
+      height: 468px;
+      background: #FFCA00;
+      color: #FFFFFF;
+      .title {
+        line-height: 67px;
+        font-size: 48px;
+        letter-spacing: 1.5px;
+        padding: 74px 46.2% 41px 15.4%;
+      }
+      .things {
+        font-size: 24px;
+        letter-spacing: 0.75px;
+        line-height: 33px;
+        // padding: 0 0 0 25px;
+        text-align: center;
+      }
+      .bg {
+        position: absolute;
+        left: 50%;
+        top: 210px;
+        width: 100%;
+      }
+    }
+    .blue-box {
+      position: absolute;
+      bottom: 0;
+      right: 95px;
+      width: 20px;
+      height: 80px;
+      background: #4279F4;
+    }
+    .gray {
+      position: absolute;
+      width: 14.3%;
+      top: 141px;
+      left: 57.9%;
+    }
+    .puple {
+      position: absolute;
+      width: 14.3%;
+      left: 62.5%;
+      top: 141px;
+    }
+  }
+  .content {
+    position: relative;
+    margin-bottom: 100px;
+    .table {
+      position: relative;
+      padding-top: 87px;
+      padding-left: 9%;
+      padding-right: 8.2%;
+      z-index: 10;
+      table {
+        border-spacing: 0;
+        table-layout: fixed;
+        border-collapse:collapse;
+        z-index: 10;
+        tr:nth-child(1) {
+          th {
+            text-align: center;
+            padding: 0;
+            position: relative;
+            vertical-align: middle;
+          }
+        }
+        th {
+          width: 20%;
+          height: 84px;
+          border: 2px solid #99D1FF;
+          font-size: 28px;
+          color: #fff;
+          letter-spacing: 0.88px;
+          text-align: center;
+          z-index: 10;
+          line-height:40px;
+          padding-top: 36px;
+          // padding-left: 26px;
+          vertical-align: text-top;
+        }
+        td {
+          width: 12.5%; 
+          height: 84px;
+          padding-left: 10px;
+          border: 2px solid #99D1FF;
+          font-size: 18px;
+          color: #4A4A4A;
+          letter-spacing: 0.62px;
+          box-sizing: border-box;
+          padding-right: 10px;
+
+        }
+        
+        td + td {
+          width: 29.5%;
+          height: 84px;
+          padding-left: 30px;
+          border: 2px solid #99D1FF;
+          font-size: 18px;
+          color: #4A4A4A;
+          letter-spacing: 0.62px;
+          padding-right: 41px;
+        }
+        td + td + td{
+            width: 38%;
+            text-align: center;
+            padding-right: 11px; 
+            padding-left: 11px;
+        }
+      }
+    }
+    .main-bg {
+      position: absolute;
+      top: 41px;
+      left: 5%;
+      width: 20%;
+      height: 120px;
+      background: #4279F4;
+    }
+    .main-bg1 {
+      position: absolute;
+      top: 1013px;
+      left: 6.3%;
+      width: 20%;
+      height: 138px;
+      background: #F56923;
+    }
+    .main-bg2 {
+      position: absolute;
+      top: 1853px;
+      left: 5.6%;
+      width: 20%;
+      height: 140px;
+      background: #99D1FF;
+    }
+    .main-bg3 {
+      position: absolute;
+      top: 2860px;
+      left: 7%;
+      width: 19%;
+      height: 140px;
+      background: #50E3C2;
+    }
+    .yellow-box {
+      position: absolute;
+      left: 150px;
+      bottom: -50px;
+      width: 80px;
+      height: 20px;
+      background: #F5A623;
+    }
+  }
+}
+
+//赞助&参展
+.sponsor {
+  .top {
+    height: 924px;
+    background: #FFF7F0;
+  }
+  .title {
+    height: 700px;
+    margin-top: 165px;
+    position: relative;
+    .pic {
+      position: absolute;
+      top: 0;
+      left: 4px;
+      width: 1220px;
+      height: 700px;
+      background: #1f1f1f;
+      z-index: 15;
+    }
+    .shadow {
+      position: absolute;
+      top: 25px;
+      left: 4px;
+      width: 1240px;
+      height: 700px;
+      background: #E0E0E0;
+      z-index: 10;
+    }
+    .welcome {
+      position: absolute;
+      top: -272px;
+      left: 138px;
+    }
+  }
+}
+// k8s培训
+.train{
+  padding-top:220px;
+  margin-bottom: 50px;
+  width:100%;
+  box-sizing: border-box;
+  padding-left:160px;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width:758px;
+    height:62px;
+    top:190px;
+    left:0;
+    background: #FCA6C8;
+    z-index: 0;
+  }
+  h1{
+    background:#4279F4;
+    position: relative;
+    z-index: 10;
+    width:1005px;
+    height:100px;
+    font-family: PingFangSC-Regular;
+    font-size: 48px;
+    color: #F0F5FF;
+    letter-spacing: 1.5px;
+    text-indent: 40px;
+    line-height: 100px;
+    font-weight: normal;
+    margin:0 !important;
+  }
+  p{
+    width:1005px;
+    box-sizing: border-box;
+    padding: 25px 37px;
+    background:  #2E3192;
+    margin-top:6px;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0.56px;
+    line-height: 32px;
+    text-align: justify;
+  }
+  .train-can{
+    margin-top:14px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .train-profile{
+    width:341px;
+    display: inline-block;
+    h3{
+      font-family: PingFangSC-Regular;
+      font-size: 24px;
+      letter-spacing: 0.56px;
+      line-height: 50px;
+      box-sizing: border-box;
+      padding-left: 24px;
+      height:50px;
+      width: 100%;
+      font-weight: normal;
+    }
+    &.grey{
+      background: #F4F4F4;
+      h3{
+        color: #ffffff;
+        background: #7ED321;
+      }
+      li{
+        color: rgba(66,121,244,0.8)
+      }
+     
+    }
+    &.green{
+      background: #B8E986;
+      h3{
+        color: rgba(0,0,0,0.7);
+        background: #F8E71C;
+      }
+    }
+    &.blue{
+      background: #99D1FF;
+      h3{
+        color: #fff;
+        background: #4279F4;
+      }
+      h2{
+        span{
+          display: block;
+          &:nth-child(2){
+            margin-top:8px;
+            margin-left: -10px;
+          }
+        }
+      }
+    }
+    div{
+      width:100%;
+      height:353px;
+      overflow: hidden;
+      img{
+        width:100%;
+        height:auto;
+      }
+    }
+    h2{
+      font-weight: normal;
+      box-sizing: border-box;
+      padding-top:20px;
+      padding-bottom: 20px;
+      padding-left: 24px;
+      span{
+        font-family: PingFangSC-Regular;
+        color: #2E3192;
+        letter-spacing: 0.56px;
+        &:nth-child(1){
+          font-size: 36px;
+        }
+        &:nth-child(2){
+          font-size: 20px;
+        }
+      }
+    }
+    
+    ul{
+      box-sizing: border-box;
+      padding-left: 24px;
+      
+      padding:24px 16px 40px 24px;
+      li{
+        box-sizing: border-box;
+        padding-left: 24px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #4279F4;;
+        letter-spacing: 0.56px;
+        line-height: 22px;
+        border-left:3px solid #ffff;
+        &.bigger{
+          line-height: 26px !important;
+
+        }
+      }
+    }
+  }
+  .train-left{
+    width: 742px;
+    .train-profile{
+      margin-right: 30px;
+      li{
+        border-left:3px solid #4279F4;
+      }
+    }
+    .train-bottom{
+      width: 707px;
+      height: 69px;
+      background: #F5A623;
+      border-radius: 8px;
+      margin-top:60px;
+      a{
+        display: block;
+        width: 100%;
+        height:100%;
+        font-family: PingFangSC-Regular;
+        font-size: 24px;
+        color: #FFFFFF;
+        letter-spacing: 0.75px;
+        text-indent: 36px;
+        line-height: 69px;
+      }
+    }
+  }
+}
+// 票务信息
+.ticket{
+  .top{
+    background: url("./img/ceucaa.jpg") no-repeat;
+    .left{
+      background: #7ED321 !important;
+    }
+  }
+  .gowhere{
+    width:209px;
+    height:69px;
+    background: #F56923;
+    border-radius: 8px;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0.75px;
+    margin:50px auto 100px auto;
+    line-height: 69px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .ticket-detail{
+    width:1056px;
+    margin:196px auto 89px auto;
+    table{
+      border-spacing: 0;
+      border-collapse:collapse;
+      width: 100%;
+      margin-bottom: 50px;
+      h1,h2,h3,h4,h5{
+        text-align: center;
+        font-weight: normal;
+        width:100%;
+        font-family: PingFangSC-Regular;
+      }
+
+      h1,h2{
+        font-size: 36px;
+        color: #4A4A4A;
+        letter-spacing: 0.75px;
+      }
+      h1{
+        margin:0 0 5px 0;
+      }
+      h2{
+        font-size: 30px;
+      }
+      h3, h4,h5{
+        font-size: 20px;
+        color: #4A4A4A;
+        letter-spacing: 0.62px;
+        line-height: 30px;
+      }
+      h4,h5{
+        font-size: 18px;
+      }
+      p{
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: #F56923;
+        letter-spacing: 0.33px;
+        display: block;
+        width:247px;
+        margin:20px auto 0 auto;
+        line-height: 24px;
+      }
+      span{
+        font-family: PingFangSC-Regular;
+        font-size: 24px;
+        color: #4A4A4A;
+        letter-spacing: 0.75px;
+        line-height: 60px;
+        text-align: center;
+        display: block;
+        width: 469px;
+        height:60px;
+      }
+      td,th{
+        border: 2px solid #50E3C2;
+        
+      }
+      .more-title{
+        width: 295px !important;
+        td{
+        width: 295px !important;
+
+        }
+      }
+      tr:nth-child(n+1){
+        th{
+          width: 291px;
+          padding:18px 0;
+        }
+      }
+      .table-both{
+        span{
+          width: 100%;
+          border:none;
+          &:nth-child(2){
+            border-top: 2px solid #50E3C2;
+          }
+        }
+        
+        
+      }
+    }
+  }
+}
+.all-bg{
+  position: relative;
+}
