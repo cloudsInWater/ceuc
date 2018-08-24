@@ -257,13 +257,23 @@ export default class Home extends React.Component {
                                 <div className="info"/>
                                 <div className="deg"/>
                                 <div className="shuo"/>
+                                <div className="bro"/>
                             </div>
                             <div className="title">
-                                合作媒体
+                            合作媒体
                             </div>
                             <div className="line3">
                                 <div className="tmt"/>
                                 <div className="pr"/>
+                                <div className="kan"/>
+                                <div className="cat"/>
+                            </div>
+
+                            <div className="title titlea">
+                            特别合作
+                            </div>
+                            <div className="line3">
+                                <div className="huo"/>
                             </div>
 
                             

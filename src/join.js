@@ -2,13 +2,14 @@ import React from "react";
 import dnImg from "./img/dn.png";
 import cncfImg from "./img/cncf.png";
 import dengImg from "./img/deng.png";
+import niImg from "./img/ni.png";
 import Bottom from "./bottom";
 import china1 from "./img/china.png";
 import china2 from "./img/china2.png";
 
 export default class Join extends React.Component {
     state = {
-        pic : ["big","small","small"]
+        pic : ["big","small","small","small"]
     };
 
     componentWillMount() {
@@ -16,7 +17,7 @@ export default class Join extends React.Component {
     }
 
     animate = (e,number) => {
-        let pic = ["small","small","small"];
+        let pic = ["small","small","small","small"];
         pic[number]="big";
         this.setState({pic});
     };
@@ -167,9 +168,23 @@ export default class Join extends React.Component {
                                 CNCF 中国区总裁
                             </div>
                             <div className="introduce padd">
-                        
                                 Linux Foundation APAC 战略规划总监，为 Linux Foundation 在大中华区推广开源。
-                            
+                            </div>
+                        </div>
+                    </div>
+                    <div className={`person ${pic[3]}`} onClick={(e)=>this.animate(e,3)}>
+                        <div className="image">
+                            <img src={ niImg } alt=""/>
+                        </div>
+                        <div className="text">
+                            <div className="name">
+                            倪朋飞<br/>
+                            </div>
+                            <div className="job">
+                            微软软件工程师
+                            </div>
+                            <div className="introduce padd">
+                            主要负责 Kubernetes 开源以及在 Azure 上的研发和落地工作。同时也是 Kubernetes 项目的维护者。曾就职于盛大、腾讯和 HyperHQ，在云计算、SDN 网络和容器编排调度等领域具有多年实践经验。维护紧跟社区更新的<a href="https://kubernetes.feisky.xyz">《Kubernetes 指南》</a>开源书 。
                             </div>
                         </div>
                     </div>
