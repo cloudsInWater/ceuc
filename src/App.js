@@ -4,7 +4,7 @@ import {
   Route,
   Link,
   Switch,
-  browserHistory
+//   browserHistory
 } from 'react-router-dom';
 import React from "react";
 import "./App.less";
@@ -12,6 +12,7 @@ import Home from "./home.js";
 import Join from "./join.js";
 import Agenda from "./agenda.js";
 import JoiniN from './join-in.js'
+import Back from './Back.js'
 import tic from "./img/tic.png"
 const ListItemLink = ({ to, ...rest}) => (
   <Route
@@ -20,11 +21,11 @@ const ListItemLink = ({ to, ...rest}) => (
         if(match){
             var paths=match.path;
             var titles=document.getElementsByTagName("title")[0];
-            if(paths=='/'|| paths=='/part'){
+            if(paths==='/'|| paths==='/part'){
               titles.innerHTML='大会首页 CEUC 云原生中国用户大会';
-            }if(paths=='/guests'){
+            }if(paths==='/guests'){
               titles.innerHTML='大会嘉宾 CEUC 云原生中国用户大会';
-            }if(paths=='/detail-schedule'){
+            }if(paths==='/detail-schedule'){
               titles.innerHTML='大会议程 CEUC 云原生中国用户大会';
             }
         }
@@ -65,12 +66,10 @@ class App extends React.Component {
                         <ListItemLink to="/guests"><span>嘉宾</span></ListItemLink>
                         <ListItemLink to="/detail-schedule"><span>议程</span></ListItemLink>
                         <ListItemLink to="/ticket-detail"> <img src={tic} alt=""/> <span>购票</span></ListItemLink>
-                        <li className= "menu-type have-width-more" onClick={this.sponsor}>
-                            <span>赞助&参展</span>
-                        </li>
-                        <li className= "menu-type have-width-more" onClick={this.sponsoraa}>
-                            <span>议题提交</span>
-                        </li>
+                        <ListItemLink to="/review-conference"><span>大会回顾</span></ListItemLink>
+
+                        
+                       
                     </ul>
                 </div>
             </aside>
@@ -82,6 +81,7 @@ class App extends React.Component {
                         <Route path="/guests" component={Join} />
                         <Route path="/detail-schedule" component={Agenda} />
                         <Route path="/ticket-detail" component={JoiniN} />
+                        <Route path="/review-conference" component={Back} />
                     </Switch>
                 </div>
             </main>

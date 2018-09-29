@@ -4,6 +4,15 @@
 }
 html,body{
   background: #fff;
+  height:auto;
+}
+#root{
+  overflow: hidden;
+  min-width:1280px;
+  margin:0 auto;
+  max-width: 1440px;
+  margin:0 auto;
+  width:100%;
 }
 .u-side {
   display: flex;
@@ -13,16 +22,16 @@ html,body{
   min-width: @screen;
   width: 100%;
   height: 100px;
-  border-right: #eeeeee 1px solid;
+  // border-right: #eeeeee 1px solid;
   justify-content: center;
+  background: #fff;
   .top {
-    max-width: @screen;
-    width: 100%;
+    width: @screen;
     display: flex;
     background: #fff;
     height:100%;
     .ico {
-      width: 160px;
+      width: 180px;
       line-height: 100px;
       margin-left: 50px;
       color: #333333;
@@ -92,9 +101,12 @@ html,body{
   justify-content: center;
   background: #fafafa;
   min-width: @screen;
+  width:100%;
   .container {
-    width: @screen;
+    min-width: @screen;
     background: #fff;
+    width:100%; 
+    margin:0 auto;
   }
 }
 
@@ -102,8 +114,10 @@ html,body{
 .consult {
   padding: 43px 40px 30px 81px;
   background: #1D4CB6;
-  width: @screen;
+  min-width: @screen;
   display: flex;
+  width:100%;
+
   .qr {
     padding-left: 18px;
   }
@@ -131,7 +145,8 @@ html,body{
 //主页样式
 .home {
   .top {
-    width: @screen;
+    min-width: @screen;
+    width:100%;
     height: 817.7px;
     background: url("./img/ceuc-01.png") no-repeat;
     -webkit-background-size: 100% 100%;
@@ -333,9 +348,14 @@ html,body{
   }
   .four-lady {
     height: 1148px;
-    width: 100%;
+    width:100%;
     background: #fff;
     position: relative;
+    .four-lady-can{
+      margin:0 auto;
+      width:@screen;
+      position: relative;
+    }
     .yellow {
       position: absolute;
       width: 25%;
@@ -602,7 +622,6 @@ html,body{
   .partner {
     position: relative;
     padding-top: 183px;
-    padding-bottom:  50px;
     .text {
       color: #4A4A4A;
       text-align: center;
@@ -627,12 +646,21 @@ html,body{
           text-align: left;
           font-weight: normal;
         }
+        &.fanga{
+          padding-right: 156px;
+          padding-bottom: 100px;
+        }
         &>div{
           // height:150px;
           display: flex;
           align-items: center;
         }
-        .cn,.cai,.k8s,.qiniu {
+        .zhuban{
+          display: flex;
+          align-items: center;
+          flex-wrap: nowrap;
+        }
+        .cn,.cai,.k8s,.qiniu,.cai1,.cai2,.cai3 {
           width: 250px;
           height: 150.5px;
           margin-right: 56px;
@@ -641,6 +669,18 @@ html,body{
         }
         .cai {
           background: url("./img/VMware.png") center center no-repeat;
+        
+        }
+        .cai1 {
+          background: url("./img/logo3.png") center center no-repeat;
+        
+        }
+        .cai2 {
+          background: url("./img/logo2.png") center center no-repeat;
+        
+        }
+        .cai3 {
+          background: url("./img/logo1.png") center center no-repeat;
         
         }
         .k8s {
@@ -693,41 +733,74 @@ html,body{
         .bro{
           background: url("./img/Broadview.png") left center no-repeat;
         }
+        .jike{
+          background: url("./img/jike.png") left center no-repeat;
+        }
       }
       .line3 {
         // height: 438px;
         padding-top: 71px;
         display: flex;
+        flex-wrap: wrap;
         padding-left: 100px;
         // align-items: center;
         // justify-content: center;
-        .tmt {
+        div{
+          margin-bottom: 50px;
           width: 200px;
-          height: 50px;
+          height: 60px;
           margin-right: 63px;
+        }
+        .tmt {
           background: url("./img/tmt.png") center right no-repeat;
         }
         .pr {
-          width: 200px;
-          height: 50px;
           background: url("./img/pr.png") center center no-repeat;
-          margin-right: 75px;
         }
         .huo{
-          width: 200px;
-          height: 50px;
           background: url("./img/huoc.png") center center no-repeat;          
         }
+        .p2{
+          background: url("./img/P2.png") center center no-repeat;          
+        }
+        .hua{
+          background: url("./img/hua.png") center center no-repeat;          
+        }
         .cat{
-          width: 200px;
-          height: 50px;
           background: url("./img/cat.png") center center no-repeat;  
         }
         .kan{
-          width: 200px;
-          height: 50px;
-          margin-right:63px;
           background: url("./img/kan.png") center center no-repeat;  
+        }
+        .tmt1 {
+          background: url("./img/one.png") center right no-repeat;
+        }
+        .pr2 {
+          background: url("./img/two.png") center center no-repeat;
+        }
+        .cat5{
+          background: url("./img/three.png") center center no-repeat;  
+        }
+        .cat4{
+          background: url("./img/four.png") center center no-repeat;  
+        }
+        .kan3{
+          background: url("./img/five.png") center center no-repeat;  
+        }
+        .b12{
+          background: url("./img/B12.png") center center no-repeat;  
+        }
+        .w{
+          background: url("./img/3w.png") center center no-repeat;  
+        }
+        .wa{
+          background: url("./img/B2B.png") center center no-repeat;  
+        }
+        .wb{
+          background: url("./img/lie.png") center center no-repeat;  
+        }
+        .zhe{
+          background: url("./img/zhejiang.png") center center no-repeat;  
         }
       }
     }
@@ -778,7 +851,8 @@ html,body{
     .bottom {
       position: relative;
       .bg {
-        width: @screen;
+        min-width: @screen;
+        width: 100%;
       }
       .site {
         position: absolute;
@@ -884,7 +958,8 @@ html,body{
 //嘉宾页样式
 .join,.ticket {
   .top {
-    width: @screen;
+    min-width: @screen;
+    width:100%;
     height: 820px;
     background: #00C6AE;
     position: relative;
@@ -947,9 +1022,12 @@ html,body{
   }
   .honor-guest {
     width: 100%;
+    // .first,.second,.third,.fourth{
+    //   border:1px solid green;
+    // }
     .first {
       position: relative;
-      height: 525px;
+      height: 500px;
       .pic {
         width: 365px;
         height: 328px;
@@ -980,7 +1058,7 @@ html,body{
       .image-text {
         position: absolute;
         display: flex;
-        top: 142px;
+        top: 80px;
         left: 40.3%;
         width: 660px;
         .image {
@@ -1028,12 +1106,12 @@ html,body{
     }
     .second {
       position: relative;
-      height: 366px;
+      height: 445px;
       .text {
         position: absolute;
         left: 16.5%;
         top: 31px;
-        width: 31.4%;
+        width: 550px;
         color: #000;
       }
       .name {
@@ -1057,19 +1135,19 @@ html,body{
         width: 280px;
         height: 280px;
         position: absolute;
-        left: 51.3%;
-        top: 0;
+        left: 62.3%;
+        top: 70px;
         background: url("./img/zx.png") no-repeat;
         -webkit-background-size: 280px 280px;
         background-size: 280px 280px;
-        z-index: 10;
+        z-index: 20;
       }
       .bg {
         width: 258.8px;
         height: 258.8px;
         position: absolute;
-        left: 66.7%;
-        top: 21px;
+        left: 69.7%;
+        top: 91px;
         background: url("./img/ceuc-24.png") no-repeat;
         -webkit-background-size: 258.8px 258.8px;
         background-size: 258.8px 258.8px;
@@ -1077,8 +1155,16 @@ html,body{
       }
     }
     .third {
-      height: 425px;
+      height: 455px;
       position: relative;
+      .bottom {
+        position: absolute;
+        width: 80px;
+        height: 20px;
+        left: 10.6%;
+        bottom: 0;
+        background: #50E3C2;
+      }
       .image {
         position: absolute;
         left: 12.4%;
@@ -1086,9 +1172,33 @@ html,body{
         width: 280px;
         height: 280px;
         background: url("./img/rdy.png") no-repeat;
-        -webkit-background-size: 280px 280px;
-        background-size: 280px 280px;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
         z-index: 10;
+        &.chen{
+          // left:62%; 
+          top:20px;
+          background: url("./img/chene.png") no-repeat;
+          background-size: 100% 100%;
+        }
+        &.xu{
+          background: url("./img/xu.png") no-repeat;
+          background-size: 280px 280px;
+          left:25%;
+        }
+        &.li{
+          background: url("./img/lia.png") no-repeat;
+          background-size: 280px 280px;
+        }
+        &.han{
+          background: url("./img/hjy.png") no-repeat;
+          background-size: 100% 100%;
+        }
+        &.du{
+          background: url("./img/du.png") no-repeat;
+          background-size: 100% 100%;
+        }
+        
       }
       .bg {
         position: absolute;
@@ -1097,14 +1207,51 @@ html,body{
         width: 280px;
         height: 280px;
         background: url("./img/Rectangle 13 green.png") no-repeat;
-        -webkit-background-size: 280px 280px;
-        background-size: 280px 280px;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+        &.li-bg{
+          background: url("./img/chenea.png") no-repeat;
+          background-size: 280px 280px;
+        }
+        &.chenb{
+          top: -250px;
+          left: 0;
+          background: url("./img/left-chen.png") no-repeat;
+          width:186px;
+          height:373px;
+        }
+        &.han-bg{
+          background: url("./img/Rectangle 13 pink.png") no-repeat;
+          background-size: 100% 100%;
+          top:0;
+          left: 14.9%;
+        }
+        &.du-bg{
+          background: #fff;
+          left: 60%;
+          top: 0px;
+        }
+        &.xu-bg{
+          background: url("./img/xu-bg.png") no-repeat;
+          background-size: 100% 100%;
+          top:0;
+        }
+        
       }
       .text {
         width: 43.3%;
         position: absolute;
         top: 39px;
         left: 40.8%;
+        // &.chenc{
+        //   left: 15%;
+        // }
+        &.xu-text{
+          left:50%;
+        }
+        &.han-text{
+          width: 640px;
+        }
         .name {
           font-size: 36px;
           letter-spacing: 1.12px;
@@ -1122,16 +1269,27 @@ html,body{
           line-height: 30px;
           font-weight: 300;
         }
+        
+        
       }
     }
     .fourth {
-      height: 485px;
+      height: 400px;
       position: relative;
       .text {
-        width: 30.4%;
+        width: 580px;
         position: absolute;
         top: 24px;
-        left: 16.5%;
+        left: 12%;
+        &.fang-text{
+          width:470px;
+        }
+       &.chenc{
+          left: 15%;
+        }
+        &.han-text{
+          width: 595px;
+        }
         .name {
           font-size: 36px;
           letter-spacing: 1.12px;
@@ -1149,31 +1307,84 @@ html,body{
           text-align: justify;
           line-height: 30px;
           font-weight: 300;
+          width:100%;
         }
       }
       .image {
         position: absolute;
-        left: 51.5%;
-        top: 0;
+        left: 63%;
+        top:28px;
         width: 280px;
         height: 280px;
         background: url("./img/hjy.png") no-repeat;
         background-size: 280px 280px;
         z-index: 10;
+        &.han{
+          background: url("./img/hjy.png") no-repeat;
+          background-size: 100% 100%;
+        }
+        &.du{
+          background: url("./img/du.png") no-repeat;
+          background-size: 100% 100%;
+        }
+        &.chen{
+          // left:62%; 
+          top:20px;
+          background: url("./img/chene.png") no-repeat;
+          background-size: 100% 100%;
+        }
+        &.xu{
+          background: url("./img/xu.png") no-repeat;
+          background-size: 280px 280px;
+        }
+        &.li{
+          background: url("./img/lia.png") no-repeat;
+          background-size: 280px 280px;
+        }
+        &.fang{
+          background: url("./img/fang.png") no-repeat;
+          background-size: 280px 280px;
+          left:53%;
+          top:-10px;
+        }
+        
       }
       .bg {
         position: absolute;
-        left: 54.5%;
-        top: -7px;
+        left: 60%;
+        top: 22px;
         width: 280px;
         height: 280px;
         background: url("./img/Rectangle 13 pink.png") no-repeat;
         background-size: 280px 280px;
+        &.han-bg{
+          background: url("./img/Rectangle 13 pink.png") no-repeat;
+          background-size: 100% 100%;
+          left: 59%;
+         top: 20px;
+        }
+        &.du-bg{
+          background: #fff;
+          left: 60%;
+          top: 0px;
+        }
+        &.li-bg{
+          background: url("./img/chenea.png") no-repeat;
+          background-size: 280px 280px;
+        }
+        &.chenb{
+          top: -250px;
+          left: 0;
+          background: url("./img/left-chen.png") no-repeat;
+          width:186px;
+          height:373px;
+        }
+        
       }
       .right {
         position: absolute;
-        right: 0;
-        top: -157px;
+        right: 0px;
+        top: -50px;
         width: 217px;
         height: 416px;
         background: url("./img/ceuc2-18.png") no-repeat;
@@ -1190,7 +1401,7 @@ html,body{
   }
   .forum {
     height: 744px;
-    margin: 87px 240px 269px 0px;
+    margin: 87px 240px 99px 0px;
     position: relative;
     width: 62.5%;
     background: url("./img/ceucTop-28.png") center left no-repeat;
@@ -1215,69 +1426,135 @@ html,body{
     }
     .forum-guest {
       position: absolute;
-      left: 87.5%;
-      top: 476px;
-      width: 450px;
-      height: 416px;
-      background: #50E3C2;
+      left: 91%;
+      top: 311px;
+      width:389px;
+      height:485px;
+      background: #4075EB;
       z-index: 10;
       color: #FFFFFF;
       .title {
-        font-size: 48px;
+        font-size: 42px;
         line-height: 67px;
         letter-spacing: 1.5px;
-        padding: 53px 55.1% 43px 11.8%;
+        text-align: center;
+        padding: 63px 0px 45px 0px;
       }
       .things {
         font-size: 20px;
         letter-spacing: 0.62px;
-        line-height: 36px;
-        padding: 0 11.8% 0 11.8%;
+        padding: 0 61px 0 61px;
         font-weight: 300;
+        text-align: justify;
+        line-height: 38px;
+        text-align: justify;
+
       }
     }
     .right {
       position: absolute;
-      right: -61%;
-      top: 18px;
-      width: 208px;
+      right: -60%;
+      top: -230px;
+      width: 201px;
       height: 604px;
       background: url("./img/Group 4 Copy.png") no-repeat;
+      background-size: 100% auto;
+      z-index: 20;
+
     }
   }
   .animate {
-    margin: 0 auto 100px auto;
+    margin: 0 auto ;
     width: 1170px;
-    height: 550px;
+    height: 480px;
     border: 1px solid #979797;
+    border-left: none;
+    border-right: none;
     display: flex;
+    &.animate-two{
+      height: 470px;
+    }
+    &.animate-three{
+      height: 450px;
+    }
+    &.animate-six{
+      .person {
+        position: relative;
+        &.big{
+          width: 700px;
+          .image{
+            img{
+              margin-left:-10px;
+            }
+          }
+        }
+        &.small {
+          width: 110px;
+          .image{
+            img{
+              margin-left: -20px;
+            }
+          }
+        }
+        .image {
+          width: 320px;
+          height:100%;
+          overflow: hidden;
+          img{
+            height:550px;
+            width:320px;
+          }
+        }
+        .text{
+         
+        }
+      }
+    }
     .person {
       display: flex;
       overflow: hidden;
       -webkit-transition: 1s width linear;
       transition: 1s width linear;
       justify-content: flex-start;
+      background: #fff;
+    position: relative;
+
       &.big {
         width: 720px;
       }
       &.small {
-        width: 150px;
+        width: 131.4px;
+        filter: gray;
+        img{
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          -ms-filter: grayscale(100%);
+          -o-filter: grayscale(100%);
+          
+          filter: grayscale(100%);
+        
+          filter: gray;
+        }
       }
       .image {
         width: 320px;
-        height: 550px;
+        height: 100%;
         img{
-          height:100%;
+          height:550px;
           width:320px;
         }
       }
       .text {
-        width: 400px;
-        padding: 44px 25px 59px 26px;
+        position: absolute;
+        top:0;
+        left: 320px;
+        width: 370px;
+        padding: 35px 25px 59px 26px;
+        color: #4A4A4A;
         .name {
-          width: 349px;
+          width: 100%;
           font-size: 30px;
-          color: #000000;
+          color: #4A4A4A;
           letter-spacing: 1.12px;
           line-height: 50px;
         }
@@ -1286,10 +1563,10 @@ html,body{
           line-height: 28px;
         }
         .introduce {
-          padding-top: 20px;
-          width: 349px;
+          padding-top: 10px;
+          width: 100%;
           font-size: 16px;
-          color: #000000;
+          color: #4A4A4A;
           letter-spacing: 1.12px;
           line-height: 30px;
           text-align: justify;
@@ -1297,6 +1574,10 @@ html,body{
           &.padd{
             padding-top:30px;
             box-sizing: border-box;
+          }
+          &.introduce-large{
+            font-size: 15px;
+            line-height: 20px;
           }
         }
       }
@@ -1307,7 +1588,8 @@ html,body{
 //议程页
 .agenda {
   .top {
-    width: @screen;
+    min-width: @screen;
+    width:100%;
     height: 820px;
     background: #00C6AE;
     position: relative;
@@ -1473,7 +1755,6 @@ html,body{
         td + td {
           width: 29.5%;
           height: 84px;
-          padding-left: 30px;
           border: 2px solid #99D1FF;
           font-size: 18px;
           color: #4A4A4A;
@@ -1482,9 +1763,15 @@ html,body{
         }
         td + td + td{
             width: 38%;
-            text-align: center;
             padding-right: 11px; 
             padding-left: 11px;
+        }
+        .td-center{
+          text-align: center;
+        }
+        .td-center-left{
+          padding-right: 110px;
+          text-align: center;
         }
       }
     }
@@ -1496,17 +1783,22 @@ html,body{
       height: 120px;
       background: #4279F4;
     }
+    .some-word{
+      color: #ccc;
+      margin-top:10px;
+      text-align: right;
+    }
     .main-bg1 {
       position: absolute;
-      top: 1013px;
+      top: 1181px;
       left: 6.3%;
-      width: 20%;
+      width: 19%;
       height: 138px;
       background: #F56923;
     }
     .main-bg2 {
       position: absolute;
-      top: 1853px;
+      top: 1848px;
       left: 5.6%;
       width: 20%;
       height: 140px;
@@ -1514,9 +1806,9 @@ html,body{
     }
     .main-bg3 {
       position: absolute;
-      top: 2860px;
+      top: 2770px;
       left: 7%;
-      width: 19%;
+      width: 18.5%;
       height: 140px;
       background: #50E3C2;
     }
@@ -1600,7 +1892,7 @@ html,body{
     font-weight: normal;
     margin:0 !important;
   }
-  p{
+  &>p{
     width:1005px;
     box-sizing: border-box;
     padding: 25px 37px;
@@ -1613,9 +1905,158 @@ html,body{
     line-height: 32px;
     text-align: justify;
   }
-  .train-can{
-    margin-top:14px;
+  .train-top{
+    width:1110px;
+    height:594px;
+    flex-direction: column;
     display: flex;
+    &>h1{
+      position: relative;
+      left:105px;
+      top:0;
+    }
+    .train-top-bottom{
+      width: 100%;
+      background: #F8E71C;
+      position: relative;
+      width:1027px;
+      .train-top-bottom-a{
+        padding-top:40px;
+        width:385px;
+        height:494px;
+        padding-right:21px;
+        box-sizing: border-box;
+        h2{
+          font-family: PingFangSC-Semibold;
+          color: #4A4A4A;
+          letter-spacing: 1.5px;
+          text-align: left;
+          font-weight:normal;
+        }
+        &>h2{
+          border-bottom:6px solid #FFFFFF;
+          font-size: 28px;
+          padding-bottom: 10px;
+          padding-left:23px;
+          box-sizing: border-box;
+        }
+        ul{
+          width: 100%;
+          padding-left:23px;
+          box-sizing: border-box;
+          h2{
+            margin:27px 0 25px 0;
+            font-size: 24px;
+          }
+          li{
+            width:100%;
+            font-family: PingFangSC-Regular;
+            font-size: 18px;
+            color: rgba(0,0,0,0.6);
+            letter-spacing: 1.5px;
+            text-align: justify;
+            line-height: 34px;
+            margin-bottom: 3px;
+          }
+        }
+      }
+      .train-top-bottom-b{
+        position: absolute;
+        bottom: 0;
+        left:399px;
+        width:711px;
+        display: flex;
+        justify-content: space-between;
+        div{
+          width:342px;
+          img{
+            width:100%;
+            height:353px;
+          }
+          p{
+            font-family: PingFangSC-Regular;
+            font-size: 36px;
+            letter-spacing: 1.5px;
+            text-align: left;
+            display: block;
+            height:118px;
+            margin-top:-5px;
+            padding-left:28px;
+            box-sizing: border-box;
+            span{
+              font-size: 20px;
+              font-family: PingFangSC-Regular;
+              font-size: 20px;
+            }
+            &.aw{
+              padding-top:21px;
+              color: #fff;
+              background: #00B1FF;
+              padding-bottom: 22px;
+              line-height: 38px;
+              span{
+                margin-left: -10px;
+              }
+            }
+            &.az{
+              padding-top:30px;
+              color: #2E3192;
+              background: #F5A623;
+            }
+          }
+
+        }
+      }
+
+    }
+    
+  }
+  .train-bottom{
+    padding-top:274px;
+    position: relative;
+    .train-bottom-p{
+      width: 1005px;
+      position: absolute;
+      height:895px;
+      display: flex;
+      flex-direction: column;
+
+      right: 0;
+      top:70px;
+      h2,p{
+        background: #99D1FF;
+        box-sizing: border-box;
+        padding-left: 33px;
+      }
+      h2{
+        font-family: PingFangSC-Semibold;
+        font-size: 28px;
+        color: #4A4A4A;
+        letter-spacing: 1.17px;
+        height:76px ;
+        margin-bottom: 6px;
+        line-height: 76px;
+        font-weight: normal;
+      }
+      p{
+        flex: 2;
+        font-family: PingFangSC-Regular;
+        font-size: 18px;
+        color: rgba(0,0,0,0.6);
+        letter-spacing: 0.56px;
+        text-align: justify;
+        line-height: 32px;
+        padding-top:18px;
+        padding-right:43px;
+      }
+    }
+  }
+  .train-can{
+    position: relative;
+    margin-top:14px;
+    z-index: 20;
+    display: flex;
+    margin-left:105px;
     align-items: flex-start;
   }
   .train-profile{
@@ -1651,7 +2092,7 @@ html,body{
       }
     }
     &.blue{
-      background: #99D1FF;
+      background: #F8E71C;
       h3{
         color: #fff;
         background: #4279F4;
@@ -1723,7 +2164,7 @@ html,body{
         border-left:3px solid #4279F4;
       }
     }
-    .train-bottom{
+    .train-bottom-button{
       width: 707px;
       height: 69px;
       background: #F5A623;
@@ -1746,6 +2187,7 @@ html,body{
 // 票务信息
 .ticket{
   .top{
+    
     background: url("./img/ceucaa.jpg") no-repeat;
     .left{
       background: #7ED321 !important;

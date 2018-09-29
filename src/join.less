@@ -1,0 +1,174 @@
+// 嘉宾简介
+.who-and-what{
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    margin-bottom: 54px;
+    .imagea{
+        width:100px;
+        height:100px;
+        margin-left: 84px;
+    }
+    .imageb{
+        width:54px;
+        height:54px;
+    }
+    h2{
+        font-size:32px; 
+        color: #4A4A4A;
+        letter-spacing: 1.69px;
+        font-family: PingFangSC-Medium;
+        margin:0 16px 0 16px;
+    }
+} 
+.animate-can{
+    width:100%;
+    background:#000;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 84px;
+    position: relative;
+}
+.animate-can::before,.animate-can::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 500px;
+    height:100%;
+    top:0;
+    background: #000;
+}
+.animate-can::before{
+    left:100%;
+}
+.animate-can::after{
+    right:100%;
+}
+.upimage{
+    img{
+        margin-top:-30px;
+    }
+}
+.guest-list{
+    width:1284px;
+    margin:0 auto;
+    position: relative;
+    margin-bottom: 100px;
+
+    .tran-left{
+        left:-50px;
+        top:570px;
+        z-index: 0;
+        position:absolute;
+        img{
+            margin-right: 10px;
+        }
+    }
+    .tran-right{
+        bottom :300px;
+        right:-10px;
+        position:absolute;
+        z-index: 0;
+    }
+    .guest-all{
+        position: relative;
+        z-index: 10;
+        width:1284px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        &.all-too-litter{
+            justify-content: flex-start;
+            box-sizing: border-box;
+            padding:0 8px;
+            .guest-one{
+                margin-right:15px;
+            }
+        }
+        .guest-one{
+            width:245px;
+            height:616px;
+            margin-bottom: 90px;
+            .guest-one-img{
+                width:100%;
+                height:334px;
+                background: #4A4A4A;
+                overflow: hidden;
+                img{
+                    width:100%;
+                    height:auto;
+                }
+                &.guest-one-img-big{
+                    img{
+                        margin-top:40px;
+                        transform: scale(1.32);
+                    }
+                }
+                &.guest-one-img-biga{
+                    img{
+                        margin-top:55px;
+                        transform: scale(1.5);
+                    }
+                }
+            }
+            .guest-one-detail{
+                width:100%;
+                border: 2px solid rgba(155,155,155,0.2);
+                box-sizing: border-box;
+                height:282px;
+                padding:31px 0px 20px 26px;
+
+                h1{
+                    font-family: PingFangSC-Medium;
+                    font-size: 20px;
+                    color: #4A4A4A;
+                    letter-spacing: 1.12px;
+                    font-weight: normal !important;
+                }
+                h3{
+                    font-family: PingFangSC-Regular;
+                    font-size: 14px;
+                    color: rgba(0,0,0,0.8);;
+                    letter-spacing: 1.12px;
+                    line-height: 20px;
+                    font-weight: normal !important;
+                }
+                div{
+                    width:200px;
+                    overflow: hidden;
+                    height:152px;
+                    box-sizing: border-box;
+                    padding-top:10px;
+                }
+                p{
+                    font-family: PingFangSC-Regular;
+                    font-size: 10px;
+                    color: rgba(0,0,0,0.8);
+                    letter-spacing: 0.12px;
+                    text-align: justify;
+                    line-height: 20px;
+                    width: 215px;
+                    display: block;
+                    height:162px;
+                    box-sizing: border-box;
+                    padding-bottom: 20px;
+                    overflow: scroll;
+                    box-sizing: border-box;
+                    padding-right: 15px;
+                    &.text-left{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+// 主持人
+.host-main{
+    display: block;
+    font-size: 20px;
+    color: #4A4A4A;
+    font-weight: normal;
+    margin-top:80px;
+}
