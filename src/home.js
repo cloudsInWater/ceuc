@@ -14,6 +14,8 @@ import { Link } from 'react-router-dom';
 import tr1 from './img/tr1.png'
 import tr2 from './img/tr2.jpeg'
 import tr3 from './img/tr3.png'
+import az from './img/az.png'
+import aw from './img/aw.png'
 export default class Home extends React.Component {
     state = {
         number: 3
@@ -82,10 +84,15 @@ export default class Home extends React.Component {
                     <div className="bg2"/>
                 </div>
                 <div className="four-lady">
-                    <img className="lady con1" src={lady4} alt=""/>
-                    <img className="lady con2" src={lady2} alt=""/>
-                    <img className="lady con3" src={lady3} alt=""/>
-                    <img className="lady con4" src={lady1} alt=""/>
+                    <div  className="four-lady-can">
+                        <img className="lady con1" src={lady4} alt=""/>
+                        <img className="lady con2" src={lady2} alt=""/>
+                        <img className="lady con3" src={lady3} alt=""/>
+                        <img className="lady con4" src={lady1} alt=""/>
+
+                    </div>
+                    
+                    
                     <div className="yellow">
                         <div className="title">
                             大会嘉宾
@@ -133,7 +140,7 @@ export default class Home extends React.Component {
                                 主论坛
                             </div>
                             <div className="line">
-                                ////////////////
+                                {`////////////////`}
                             </div>
                             <div className="content">
                                 <div className="cir pink"/>CNCF Keynote<br/>
@@ -154,13 +161,13 @@ export default class Home extends React.Component {
                                 行业论坛
                             </div>
                             <div className="line">
-                                //////////////////////////
+                                {`//////////////////////////`}
                             </div>
                             <div className="content">
-                                <div className="cir yellow"/>金融行业落地案例专场<br/>
-                                <div className="cir yellow"/>制造业落地案例专场<br/>
-                                <div className="cir yellow"/>新零售电商落地案例专场<br/>
-                                <div className="cir yellow"/>能源/教育业落地案例专场
+                                <div className="cir yellow"/>金融行业落地案例<br/>
+                                <div className="cir yellow"/>制造行业落地案例<br/>
+                                <div className="cir yellow"/>电商行业落地案例<br/>
+                                <div className="cir yellow"/>能源行业落地案例
                             </div>
                         </div>
                     </div>
@@ -170,7 +177,7 @@ export default class Home extends React.Component {
                                 技术论坛
                             </div>
                             <div className="line">
-                                //////////////////////////
+                                {`//////////////////////////`}
                             </div>
                             <div className="content">
                                 <div className="cir blue"/>Kubernetes 编排与管理<br/>
@@ -182,50 +189,93 @@ export default class Home extends React.Component {
                     </div>
                 </div>
                 <div className="train">
-                    <h1>Kubernetes 培训</h1>
-                    <p>K8S 顶级讲师细致讲解，从 Kubernetes 的前世今生，到架构及原理；从 Kubernetes 存储子系统的介绍，到分享性能调优的实际案例，了解社区的发展方向和趋势；从 Kubernetes 中的资源管理及默认功能，到如何进行定制化的开发。 </p>
-                    <div className="train-can">
-                        <div className="train-left">
-                            <div className="train-profile grey"> 
-                                <div><img src={tr1} alt=""/></div>
-                                <h2><span>邓德源</span><span>（才云科技 CTO）</span></h2>
-                                <h3>Kubernetes 架构及原理</h3>
+                    <div className="train-top">
+                        <h1>Workshop + Kubernetes 培训</h1>
+                        <div className="train-top-bottom">
+                            <div  className="train-top-bottom-a">
+                                <h2>Workshop 12:30-14:30</h2>
                                 <ul>
-                                    <li> Kubernetes 的前世今生</li>
-                                    <li> Kubernetes 的架构和设计原则</li>
-                                    <li> Kubernetes 的工作流程</li>
-                                    <li> Kubernetes 联邦集群</li>
+                                    <li>
+                                        <h2>深入浅出 PouchContainer 容器化业务实践</h2>
+                                    </li>
+                                    <li>1. 如何快速部署 PouchContainer 运行环境</li>
+                                    <li>2. 如何实现企业传统业务的容器化（普通容器以及富容器）</li>
+                                    <li>3. 如何加强容器运行时环境的隔离性</li>
+                                    <li>4. 如何通过 PouchContainer 增强 Kubernetes 运行能力</li>
                                 </ul>
                             </div>
-                            <div className="train-profile green">
-                                <div><img src={tr2} alt=""/></div>
-                                <h2><span>马达</span><span>（IBM 软件架构师）</span></h2>
-                                <h3>Kubernetes 资源管理详解</h3>
+                            <div className="train-top-bottom-b">
+                                <div>
+                                    <img src={aw} alt=""/>
+                                    <p className="aw"> 万仔仁 <br/><span>（阿里巴巴高级开发工程师）</span></p>
+                                </div>
+                                <div>
+                                    <img src={az} alt=""/>
+                                    <p className="az">张敏<span>（阿里巴巴技术专家）</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="train-bottom">
+                        <div  className="train-bottom-p">
+                            <h2>Kubernetes 培训 14:35-18:35</h2>
+                            <p>K8S 顶级讲师细致讲解，从 Kubernetes 的前世今生，到架构及原理；从 Kubernetes 存储子系统的介绍，到分享性能调优的实际案例，了解社区的发展方向和趋势；从 Kubernetes 中的资源管理及默认功能，到如何进行定制化的开发。 </p>
+                        </div>
+                        <div className="train-can">
+                            <div className="train-left">
+                                <div className="train-profile grey"> 
+                                    <div><img src={tr1} alt=""/></div>
+                                    <h2><span>邓德源</span><span>（才云科技 CTO）</span></h2>
+                                    <h3>Kubernetes 架构及原理</h3>
+                                    <ul>
+                                        <li> Kubernetes 的前世今生</li>
+                                        <li> Kubernetes 的架构和设计原则</li>
+                                        <li> Kubernetes 的工作流程</li>
+                                        <li> Kubernetes 联邦集群</li>
+                                    </ul>
+                                </div>
+                                <div className="train-profile green">
+                                    <div><img src={tr2} alt=""/></div>
+                                    <h2><span>马达</span><span>（IBM 软件架构师）</span></h2>
+                                    <h3>Kubernetes 资源管理详解</h3>
+                                    <ul>
+                                        <li> Kubernetes Quota 详解</li>
+                                        <li> Kubernetes Scheduler 调度策略</li>
+                                        <li> Kubernetes 多用户管理</li>
+                                        <li> Kubernetes 资源管理插件</li>
+                                    </ul> 
+                                </div>
+                                <div className="train-bottom-button"><Link to="/ticket-detail">立即报名>>></Link></div>
+                            </div>
+                            <div className="train-profile blue">
+                                <div><img src={tr3} alt=""/></div>
+                                <h2><span>熊中哲</span><span>（沃趣科技 VP of Engineering）</span></h2>
+                                <h3>Kubernetes 存储详解</h3>
                                 <ul>
-                                    <li> Kubernetes Quota 详解</li>
-                                    <li> Kubernetes Scheduler 调度策略</li>
-                                    <li> Kubernetes 多用户管理</li>
-                                    <li> Kubernetes 资源管理插件</li>
+                                    <li className="bigger"> Kubernetes 存储模型和实践</li>
+                                    <li className="bigger"> Kubernetes 动态存储管理和扩容</li>
+                                    <li> Kubernetes 新特性 : LocalVolume，对调度器的影响以及局限</li>
+                                    <li> Kubernetes 新特性 : CSI 和基于 CSI 实现卷扩容实现</li>
+                                    <li > Kubernetes 问题定位 : CSI 组件性能问题定位及其调优</li>
                                 </ul> 
                             </div>
-                            <div className="train-bottom"><Link to="/ticket-detail">立即报名>>></Link></div>
-                        </div>
-                        <div className="train-profile blue">
-                            <div><img src={tr3} alt=""/></div>
-                            <h2><span>熊中哲</span><span>（沃趣科技 VP of Engineering）</span></h2>
-                            <h3>Kubernetes 存储详解</h3>
-                            <ul>
-                                <li className="bigger"> Kubernetes 存储模型和实践</li>
-                                <li className="bigger"> Kubernetes 动态存储管理和扩容</li>
-                                <li> Kubernetes 新特性 : LocalVolume，对调度器的影响以及局限</li>
-                                <li> Kubernetes 新特性 : CSI 和基于 CSI 实现卷扩容实现</li>
-                                <li > Kubernetes 问题定位 : CSI 组件性能问题定位及其调优</li>
-                            </ul> 
                         </div>
                     </div>
                 </div>
                 <div className="partner">
                     <div className="text">
+                        <div className="title">
+                            主办方
+                        </div>
+                        <div className="line1 fanga">
+                            <div className="zhuban">
+                                <div className="cai1"/>
+                                <div className="cai2"/>
+                                <div className="cai3"/>
+                            </div>
+                            
+                        </div>
                         <div className="title">
                             赞助商
                         </div>
@@ -257,13 +307,36 @@ export default class Home extends React.Component {
                                 <div className="info"/>
                                 <div className="deg"/>
                                 <div className="shuo"/>
+                                <div className="bro"/>
+                                <div className="jike"/>
                             </div>
                             <div className="title">
-                                合作媒体
+                            合作媒体
                             </div>
                             <div className="line3">
                                 <div className="tmt"/>
                                 <div className="pr"/>
+                                <div className="kan"/>
+                                <div className="cat"/>
+                                <div className="tmt1"/>
+                                <div className="pr2"/>
+                                <div className="kan3"/>
+                                <div className="cat4"/>
+                                <div className="cat5"/>
+                                <div className="b12"/>
+                                <div className="wa"/>
+                                <div className="w"/>
+                                <div className="wb"/>
+                                <div className="zhe"/>
+                            </div>
+
+                            <div className="title titlea">
+                            特别合作
+                            </div>
+                            <div className="line3">
+                                <div className="hua"/>
+                                <div className="p2"/>
+                                <div className="huo"/>
                             </div>
 
                             
